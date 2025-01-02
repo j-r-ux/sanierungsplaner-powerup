@@ -1,0 +1,20 @@
+{
+  "name": "Sanierungsplanung",
+  "description": "Power-Up für die Haus-Sanierungsplanung",
+  "capabilities": {
+    "card-buttons": {
+      "url": "./index.html",
+      "title": "Sanierungsplanung",
+      "icon": {
+        "url": "https://your-icon-url.com/icon.png",
+        "width": 12,
+        "height": 12
+      }
+    }
+  },
+  "connectors": {
+    "authorization": {
+      "type": "none"
+    }
+  }
+}
