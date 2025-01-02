@@ -1,23 +1,17 @@
 {
-  "name": "Sanierungsplanung",
-  "description": "Power-Up für die Haus-Sanierungsplanung",
-  "icon": {
-    "url": "./renovierung.png"
-  },
-  "author": "jr-ux",
-  "capabilities": [
-    "board-buttons",
-    "callback",
-    "card-buttons",
-    "card-badges",
-    "show-settings"
-  ],
-  "connectors": {
-    "iframe": {
-      "url": "./index.html"
-    }
-  },
-  "recommend": {
-    "urls": []
+  "name": "Test Power-Up",
+  "description": "Ein einfaches Test-Power-Up",
+  "capabilities": {
+    "card-buttons": [
+      {
+        "url": "./index.html",
+        "title": "Test Button",
+        "icon": {
+          "url": "https://via.placeholder.com/12",
+          "width": 12,
+          "height": 12
+        }
+      }
+    ]
   }
 }
