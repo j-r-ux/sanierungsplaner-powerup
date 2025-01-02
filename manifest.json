@@ -6,17 +6,15 @@
   },
   "author": "Ihr Name",
   "capabilities": [
-    "attachment-sections",
     "board-buttons",
     "card-badges",
     "card-buttons",
-    "card-detail-badges",
     "card-back-section",
     "show-settings"
   ],
   "connectors": {
     "iframe": {
-      "url": "./index.html"
+      "url": "https://j-r-ux.github.io/sanierungsplaner-powerup/index.html"
     }
   }
 }
