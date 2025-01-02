@@ -1,20 +1,22 @@
 {
-  "name": "Sanierungsplanung",
-  "description": "Power-Up für die Haus-Sanierungsplanung",
-  "capabilities": {
-    "card-buttons": {
-      "url": "./index.html",
-      "title": "Sanierungsplanung",
-      "icon": {
-        "url": "https://j-r-ux.github.io/sanierungsplaner-powerup/renovierung.png",
-        "width": 12,
-        "height": 12
-      }
-    }
+  "name": "Sanierungsplaner",
+  "details": "Power-Up für die Sanierungsplanung: Budget- und Angebotsmanagement",
+  "icon": {
+    "url": "./images/renovierung.png"
   },
+  "author": "Ihr Name",
+  "capabilities": [
+    "attachment-sections",
+    "board-buttons",
+    "card-badges",
+    "card-buttons",
+    "card-detail-badges",
+    "card-back-section",
+    "show-settings"
+  ],
   "connectors": {
-    "authorization": {
-      "type": "none"
+    "iframe": {
+      "url": "./index.html"
     }
   }
 }
