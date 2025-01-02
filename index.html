@@ -3,9 +3,11 @@
 <head>
   <title>Sanierungsplanung</title>
   <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Sanierungsplanung</h1>
+  
   <div>
     <label>Bereich:</label>
     <select id="bereich">
@@ -15,35 +17,52 @@
       <option value="heizung">Heizung</option>
     </select>
   </div>
+  
   <div>
-    <label>Kostenschätzung:</label>
-    <input type="number" id="kostenschaetzung" placeholder="€">
+    <label>Kostenschätzung (€):</label>
+    <input type="number" id="kostenschaetzung" placeholder="Kostenschätzung">
   </div>
+  
   <div>
     <label>Verlinkte Angebote:</label>
-    <input type="text" id="angebote" placeholder="Karten-URL hier einfügen">
+    <select id="angebote"></select>
   </div>
+  
   <div>
-    <label>Abhängigkeiten:</label>
-    <input type="text" id="abhaengigkeiten" placeholder="Karten-URL hier einfügen">
+    <label>Tatsächliche Kosten (€):</label>
+    <input type="number" id="tatsaechliche_kosten" placeholder="Tatsächliche Kosten">
   </div>
+  
   <div>
-    <label>Tatsächliche Kosten:</label>
-    <input type="number" id="tatsaechliche_kosten" placeholder="€">
+    <label>Erwarteter Förderungsbetrag (€):</label>
+    <input type="number" id="foerderungsbetrag" placeholder="Förderungsbetrag">
   </div>
+  
   <div>
-    <label>Erwarteter Förderungsbetrag:</label>
-    <input type="number" id="foerderungsbetrag" placeholder="€">
+    <label>Zahlungstermin:</label>
+    <input type="date" id="zahlungstermin">
   </div>
+  
   <div>
     <label>Deadline:</label>
     <input type="date" id="deadline">
   </div>
+  
   <div>
     <label>To-Do-Liste:</label>
-    <textarea id="todo_list" placeholder="Unterlagen oder ToDos hier einfügen"></textarea>
+    <textarea id="todo_list" placeholder="Unterlagen oder To-Dos"></textarea>
   </div>
+  
   <button onclick="saveData()">Speichern</button>
+  
+  <h2>Budgetübersicht</h2>
+  <div id="budgetOverview"></div>
+  
+  <h2>Gantt-Chart</h2>
+  <canvas id="ganttChart" width="800" height="400"></canvas>
+  
   <script src="script.js"></script>
+  <script src="budget.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
